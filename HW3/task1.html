@@ -1,0 +1,25 @@
+<html>
+<head> 
+<meta charset="UTF-8">
+<title> JavaScript - Урок2 </title>
+</head>
+<body> 
+<script>
+var prime = [ 2 ],
+    num = 2;
+while ( num <= 100 ) {
+    var check = 1;
+    for ( var a = 0; a < prime.length; a++) {
+        if ( num % prime[ a ] === 0) {
+           check = 0;
+        }
+    }
+    if ( check === 1 ) {
+        prime.push ( num );
+    }
+    num++;
+}
+console.log ( prime );
+ </script>
+</body>
+</html>
